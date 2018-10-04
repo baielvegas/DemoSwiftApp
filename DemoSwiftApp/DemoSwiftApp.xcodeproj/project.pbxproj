@@ -12,6 +12,7 @@
 		52C22CB12164AA0000D881D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C22CAF2164AA0000D881D5 /* Main.storyboard */; };
 		52C22CB32164AA0200D881D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52C22CB22164AA0200D881D5 /* Assets.xcassets */; };
 		52C22CB62164AA0200D881D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C22CB42164AA0200D881D5 /* LaunchScreen.storyboard */; };
+		52C64B1D216615BF00D0F35B /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C64B1C216615BF00D0F35B /* WeatherTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		52C22CB22164AA0200D881D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52C22CB52164AA0200D881D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52C22CB72164AA0200D881D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52C64B1C216615BF00D0F35B /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				52C22CAB2164AA0000D881D5 /* AppDelegate.swift */,
+				52C64B1C216615BF00D0F35B /* WeatherTableViewCell.swift */,
 				52C22CAD2164AA0000D881D5 /* ViewController.swift */,
 				52C22CAF2164AA0000D881D5 /* Main.storyboard */,
 				52C22CB22164AA0200D881D5 /* Assets.xcassets */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C64B1D216615BF00D0F35B /* WeatherTableViewCell.swift in Sources */,
 				52C22CAE2164AA0000D881D5 /* ViewController.swift in Sources */,
 				52C22CAC2164AA0000D881D5 /* AppDelegate.swift in Sources */,
 			);

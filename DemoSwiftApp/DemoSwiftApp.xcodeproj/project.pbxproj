@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5204DF67216DE28A001668E5 /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5204DF66216DE28A001668E5 /* WeatherTableViewCell.swift */; };
 		5204DF69216DFC06001668E5 /* weather.json in Resources */ = {isa = PBXBuildFile; fileRef = 5204DF68216DFC06001668E5 /* weather.json */; };
+		5204DF6F216E100D001668E5 /* ModelJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5204DF6E216E100D001668E5 /* ModelJSON.swift */; };
 		52C22CAC2164AA0000D881D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C22CAB2164AA0000D881D5 /* AppDelegate.swift */; };
 		52C22CAE2164AA0000D881D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C22CAD2164AA0000D881D5 /* ViewController.swift */; };
 		52C22CB12164AA0000D881D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C22CAF2164AA0000D881D5 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		5204DF66216DE28A001668E5 /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
 		5204DF68216DFC06001668E5 /* weather.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = weather.json; path = ../../../../../Desktop/weather.json; sourceTree = "<group>"; };
+		5204DF6E216E100D001668E5 /* ModelJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelJSON.swift; sourceTree = "<group>"; };
 		52C22CA82164AA0000D881D5 /* DemoSwiftApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoSwiftApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C22CAB2164AA0000D881D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52C22CAD2164AA0000D881D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				5204DF66216DE28A001668E5 /* WeatherTableViewCell.swift */,
 				52C22CAD2164AA0000D881D5 /* ViewController.swift */,
 				52C22CAF2164AA0000D881D5 /* Main.storyboard */,
+				5204DF6E216E100D001668E5 /* ModelJSON.swift */,
 				5204DF68216DFC06001668E5 /* weather.json */,
 				52C22CB22164AA0200D881D5 /* Assets.xcassets */,
 				52C22CB42164AA0200D881D5 /* LaunchScreen.storyboard */,
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5204DF67216DE28A001668E5 /* WeatherTableViewCell.swift in Sources */,
+				5204DF6F216E100D001668E5 /* ModelJSON.swift in Sources */,
 				52C22CAE2164AA0000D881D5 /* ViewController.swift in Sources */,
 				52C22CAC2164AA0000D881D5 /* AppDelegate.swift in Sources */,
 			);

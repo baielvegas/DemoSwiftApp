@@ -11,10 +11,10 @@ import SwiftyJSON
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    let weatherDay = ["Monday", "Tuesday"]
-    let weatherDate = ["01 October", "02 October"]
-    let weatherDescrp = ["Sunny", "Rainy"]
-    let temp = ["20C", "13C"]
+    let weatherDay = ["Monday", "Tuesday", "Monday", "Tuesday", "Monday", "Tuesday"]
+    let weatherDate = ["01 October", "02 October", "01 October", "02 October", "01 October", "02 October"]
+    let weatherDescrp = ["Sunny", "Rainy", "Sunny", "Rainy", "Sunny", "Rainy"]
+    let temp = ["20C", "13C", "20C", "13C", "20C", "13C"]
   
     @IBOutlet weak var weatherTableView: UITableView!
     

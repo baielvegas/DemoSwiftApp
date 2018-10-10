@@ -13,7 +13,6 @@ struct MainList {
 }
 
 struct List {
-    var dt: Int
     var main: Main
     var weather: [Weather]
 }

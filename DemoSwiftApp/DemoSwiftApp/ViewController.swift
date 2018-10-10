@@ -27,6 +27,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
     }
     
+    func parseJson(){
+        
+    }
+
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return weatherDate.count
     }

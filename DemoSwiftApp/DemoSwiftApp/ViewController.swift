@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    let weathertext = ["Monday, 01 October, Sunny, 20C", "Tuesday, 02 October, Rainy, 13C"]
-    let textCellIdentifier = "weatherCell"
+    let weatherDay = ["Monday", "Tuesday"]
+    let weatherDate = ["01 October", "02 October"]
+    let weatherDescrp = ["Sunny", "Rainy"]
+    let temp = ["20C", "13C"]
   
     @IBOutlet weak var weatherTableView: UITableView!
     
@@ -24,16 +27,23 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return weathertext.count
+        return weatherDate.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCell(withIdentifier: "weatherCell") as! WeatherTableViewCell
+        
+        cell.weatherDay.text = weatherDay[indexPath.row]
+        cell.weatherDate.text = weatherDate[indexPath.row]
+        cell.weatherDescrp.text = weatherDescrp[indexPath.row]
+        cell.weatherTemp.text = temp[indexPath.row]
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
 }
 

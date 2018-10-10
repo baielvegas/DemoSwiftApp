@@ -9,12 +9,12 @@
 import UIKit
 
 class WeatherTableViewCell: UITableViewCell {
-
     
+    @IBOutlet weak var weatherDay: UILabel!
+    @IBOutlet weak var weatherDate: UILabel!
+    @IBOutlet weak var weatherDescrp: UILabel!
+    @IBOutlet weak var weatherTemp: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-     
-    }
-
 }
+
+

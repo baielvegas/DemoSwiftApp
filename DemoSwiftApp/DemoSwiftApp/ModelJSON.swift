@@ -23,6 +23,7 @@ struct Main: Decodable {
 
 struct Weather: Decodable {
     var main: String
+    var description: String
 }
 
 

@@ -39,10 +39,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             do {
                 let list = try JSONDecoder().decode(MainList.self, from: data as Data)
                 print(list.list[0].weather[0].main)
-                weatherDescrp.append(list.list[0].weather[0].main)
+                print(list.list[0].weather[0].description)
+                print(list.list[0].main.temp)
                 weatherDay.append(list.list[0].weather[0].main)
-                weatherDate.append(list.list[0].weather[0].main)
+                weatherDescrp.append(list.list[0].weather[0].description)
                 temp.append(list.list[0].weather[0].main)
+                weatherDate.append(list.list[0].weather[0].main)
             } catch let e {
                 print(e)
             }

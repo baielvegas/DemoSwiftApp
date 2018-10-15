@@ -7,7 +7,9 @@
 //
 
 import UIKit
-import SwiftyJSON
+
+//let a = MainList(list: <#[List]#>)
+//let b = List(main: <#Main#>, weather: <#[Weather]#>)
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -25,10 +27,22 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         weatherTableView.delegate = self
         weatherTableView.dataSource = self
         
+        parseJson()
     }
     
-    func parseJson(){
-        
+    
+    
+    
+    func parseJson() {
+        let path = Bundle.main.path(forResource: "weather", ofType: "json")
+        if let data = NSData(contentsOf: URL(fileURLWithPath: path!)) {
+            do {
+                let list = try JSONDecoder().decode(MainList.self, from: data as Data)
+                print(list.list[0].weather[0].main)
+            } catch let e {
+                print(e)
+            }
+        }
     }
 
     

@@ -8,20 +8,20 @@
 
 import Foundation
 
-struct MainList {
+struct MainList: Decodable {
     var list: [List]
 }
 
-struct List {
+struct List: Decodable {
     var main: Main
     var weather: [Weather]
 }
 
-struct Main {
+struct Main: Decodable {
     var temp: Float
 }
 
-struct Weather {
+struct Weather: Decodable {
     var main: String
 }
 

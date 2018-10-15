@@ -13,10 +13,10 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    let weatherDay = ["Monday", "Tuesday", "Monday", "Tuesday", "Monday", "Tuesday"]
-    let weatherDate = ["01 October", "02 October", "01 October", "02 October", "01 October", "02 October"]
-    let weatherDescrp = ["Sunny", "Rainy", "Sunny", "Rainy", "Sunny", "Rainy"]
-    let temp = ["20C", "13C", "20C", "13C", "20C", "13C"]
+    var weatherDay = ["Monday", "Tuesday", "Monday", "Tuesday", "Monday", "Tuesday"]
+    var weatherDate = ["01 October", "02 October", "01 October", "02 October", "01 October", "02 October"]
+    var weatherDescrp = ["Sunny", "Rainy", "Sunny", "Rainy", "Sunny", "Rainy"]
+    var temp = ["20C", "13C", "20C", "13C", "20C", "13C"]
   
     @IBOutlet weak var weatherTableView: UITableView!
     
@@ -39,6 +39,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             do {
                 let list = try JSONDecoder().decode(MainList.self, from: data as Data)
                 print(list.list[0].weather[0].main)
+                weatherDescrp.append(list.list[0].weather[0].main)
+                weatherDay.append(list.list[0].weather[0].main)
+                weatherDate.append(list.list[0].weather[0].main)
+                temp.append(list.list[0].weather[0].main)
             } catch let e {
                 print(e)
             }
